@@ -85,11 +85,11 @@ function pauseRecording(){
 	if (rec.recording){
 		//pause
 		rec.stop();
-		pauseButton.innerHTML="Resume";
+		pauseButton.innerHTML=`<i class="icon-pause">`;
 	}else{
 		//resume
 		rec.record()
-		pauseButton.innerHTML="Pause";
+		pauseButton.innerHTML=`<i class="icon-pause">`;
 
 	}
 }
